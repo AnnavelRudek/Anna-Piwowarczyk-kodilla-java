@@ -26,7 +26,7 @@ public class ForumPost {
         ForumPost forumPost = (ForumPost) o;
 
         if (!postBody.equals(forumPost.postBody)) return false; // zawarte w materiale kodilli
-        return author.equals(forumPost.author)
+        return author.equals(forumPost.author);
 
         //return Objects.equals(postBody, forumPost.postBody) && // wygenerowane przez inteij
                // Objects.equals(author, forumPost.author);
