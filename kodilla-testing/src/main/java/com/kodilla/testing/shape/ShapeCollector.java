@@ -9,13 +9,37 @@ import java.util.ArrayList;
 
 public class ShapeCollector implements Shape {
 
-    private ArrayList<Shape> shapes = new ArrayList<>();
+    private Shape shape;
+    private ArrayList<Shape> figureShapes = new ArrayList<>();
+    public ShapeCollector(Shape shape) {
+        this.shape = shape;
+    }
 
-    public void addFigure(Shape shape){}
 
-    public void removeFigure(Shape shape){}
+    public void addFigure(Shape shape){
+        figureShapes.add(shape);
+    }
 
-    public void getFigure(int n){}
+    public void removeFigure(Shape shape){
+        figureShapes.remove(shape);
+    }
 
-    public void showFigures(){} //trzecią pobierającą z kolekcji figurę z pozycji n listy.
+    public void getFigure(int n){
+        figureShapes.get(n);
+        System.out.println("Element of the list is: " + figureShapes);
+    }
+
+    public void showFigures(){} // pobierającą z kolekcji figurę z pozycji n listy.
+
+    @Override
+    public void getShapeName(String shapeName) {
+
+    }
+
+    @Override
+    public void getField(double field) {
+
+    }
 }
+
+
