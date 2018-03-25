@@ -22,7 +22,6 @@ public class ShapeCollector {
         figureShapes.remove(shape);
     }
 
-
     public void getFigure(Shape shape) {
         figureShapes.set();
         System.out.println("Element of the list is: " + figureShapes);
