@@ -2,44 +2,41 @@ package com.kodilla.testing.shape;
 
 import java.awt.*;
 import java.util.ArrayList;
-
-// Klasa ta przechowuje figury geometryczne w kolekcji ArrayList. Figury są następujące: kwadrat, koło, trójkąt (oczywiście użyj angielskich
-//nazw klas).
+import java.lang.*;
 
 
-public class ShapeCollector implements Shape {
 
+public class ShapeCollector {
     private Shape shape;
     private ArrayList<Shape> figureShapes = new ArrayList<>();
+
     public ShapeCollector(Shape shape) {
         this.shape = shape;
     }
 
-
-    public void addFigure(Shape shape){
+    public void addFigure(Shape shape) {
         figureShapes.add(shape);
     }
 
-    public void removeFigure(Shape shape){
+    public void removeFigure(Shape shape) {
         figureShapes.remove(shape);
     }
 
-    public void getFigure(int n){
-        figureShapes.get(n);
+
+    public void getFigure(Shape shape) {
+        figureShapes.set();
         System.out.println("Element of the list is: " + figureShapes);
     }
 
-    public void showFigures(){} // pobierającą z kolekcji figurę z pozycji n listy.
+    public void showFigures(String shape) {
+       figureShapes.get();
+   }
 
-    @Override
-    public void getShapeName(String shapeName) {
-
-    }
-
-    @Override
-    public void getField(double field) {
-
-    }
 }
+    // pobierającą z kolekcji figurę z pozycji n listy.
+
+    // showFigures najlepiej jakby zwracała String lub Lis wtedy będzie ją najłatwiej przetestować
+
+
 
 

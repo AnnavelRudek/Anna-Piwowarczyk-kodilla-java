@@ -1,8 +1,8 @@
 package com.kodilla.testing.shape;
 
 import org.junit.*;
+import java.lang.*;
 
-import java.util.ArrayList;
 
 public class ShapeCollectorTestSuite {
     private static int  testCounter = 0;
@@ -26,15 +26,14 @@ public class ShapeCollectorTestSuite {
     @Test
     public void testAddFigure(){
         //Given
-        Shape triangle = new Triangle("Triagnle", 3.0);
+        Shape triangle = new Triangle("Triagnle", (int) 3.0);
         ShapeCollector shapeCollector = new ShapeCollector();
-        ArrayList<Shape> figureShapes = new ArrayList<>();
 
         //When
-        figureShapes.add(triangle);
+        ShapeCollector.add(triangle);
 
         //Then
-        Assert.assertEquals(1, figureShapes.getFigure(0));
+        Assert.assertEquals(1, shapeCollector.getFigure(0));
     }
 
     @Test
@@ -42,12 +41,11 @@ public class ShapeCollectorTestSuite {
         //Given
         Shape square = new Square("Square", 4.0);
         ShapeCollector shapeCollector = new ShapeCollector();
-        ArrayList<Shape> figureShapes = new ArrayList<>();
 
         //When
-        figureShapes.remove(square);
+        shapeCollector.removeFigure(square);
         //Then
-        Assert.assertEquals(1, figureShapes.getFfigure());
+        Assert.assertEquals(1, shapeCollector.getFigure(0));
     }
 
     @Test

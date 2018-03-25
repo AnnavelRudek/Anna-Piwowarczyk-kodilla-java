@@ -3,20 +3,20 @@ package com.kodilla.testing.shape;
 import java.util.Objects;
 
 public class Circle implements Shape {
-    private String ShapeName;
-    private Integer Field;
+    private String shapeName;
+    private Integer field;
 
     public Circle(String shapeName, Integer field) {
-        this.ShapeName = shapeName;
-        this.Field = field;
+        this.shapeName = shapeName;
+        this.field = field;
     }
 
     public String getShapeName() {
-        return ShapeName;
+        return shapeName;
     }
 
     public Integer getField() {
-        return Field;
+        return field;
     }
 
     @Override
@@ -24,22 +24,32 @@ public class Circle implements Shape {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Circle circle = (Circle) o;
-        return Objects.equals(ShapeName, circle.ShapeName) &&
-                Objects.equals(Field, circle.Field);
+        return Objects.equals(shapeName, circle.shapeName) &&
+                Objects.equals(field, circle.field);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(ShapeName, Field);
+        return Objects.hash(shapeName, field);
     }
 
     @Override
     public String toString() {
         return "Circle{" +
-                "ShapeName='" + ShapeName + '\'' +
-                ", Field=" + Field +
+                "ShapeName='" + shapeName + '\'' +
+                ", Field=" + field +
                 '}';
+    }
+
+    @Override
+    public void getShapeName(String shapeName) {
+
+    }
+
+    @Override
+    public void getField(double field) {
+
     }
 }
 
