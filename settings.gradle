@@ -1,8 +1,4 @@
 include 'kodilla-testing'
-include 'kodilla-testing'
 include 'kodilla-stream'
-include 'kodilla-stream2'
-findProject(':kodilla-stream2')?.name = 'kodilla-stream'
-include 'new-kodilla-stream'
-findProject(':new-kodilla-stream')?.name = 'kodilla-stream'
+
 

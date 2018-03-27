@@ -20,12 +20,19 @@ public class ShapeCollector {
 
     public Shape getFigure(int index) {
         System.out.println("Element of the list is: " + figureShapes);
-        return figureShapes.get(index);
+        if (index < figureShapes.size()) {
+            return figureShapes.get(index);
+        }
+        return null;
     }
 
-   // public void showFigures(String shape) {
-       //figureShapes.get();
-  // }
+   public String showFigures() {
+        String names = "";
+        for (Shape s: figureShapes){
+            names = names + " " + s.getShapeName();
+        }
+       return names;
+   }
 
 }
     // pobierającą z kolekcji figurę z pozycji n listy.

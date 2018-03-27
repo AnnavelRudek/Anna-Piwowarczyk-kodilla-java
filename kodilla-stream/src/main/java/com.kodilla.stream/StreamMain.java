@@ -1,6 +1,6 @@
-package java.com.kodilla.stream;
+package java.stream;
 
-import com.kodilla.stream.lambda.SaySomething;
+import java.stream.lambda.SaySomething;
 
 public class StreamMain {
     public static void  main(String[] args) {

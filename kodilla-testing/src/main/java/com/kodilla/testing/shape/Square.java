@@ -42,10 +42,7 @@ public class Square implements Shape {
                 '}';
     }
 
-    @Override
-    public void getShapeName(String shapeName) {
 
-    }
 
     @Override
     public void getField(int field) {

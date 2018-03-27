@@ -42,10 +42,6 @@ public class Circle implements Shape {
                 '}';
     }
 
-    @Override
-    public void getShapeName(String shapeName) {
-
-    }
 
     @Override
     public void getField(int field) {
