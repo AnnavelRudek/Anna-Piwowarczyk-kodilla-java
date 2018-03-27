@@ -48,7 +48,7 @@ import java.util.Objects;
      }
 
      @Override
-     public void getField(double field) {
+     public void getField(int field) {
 
      }
  }

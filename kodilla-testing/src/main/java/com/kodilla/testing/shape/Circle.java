@@ -48,7 +48,7 @@ public class Circle implements Shape {
     }
 
     @Override
-    public void getField(double field) {
+    public void getField(int field) {
 
     }
 }

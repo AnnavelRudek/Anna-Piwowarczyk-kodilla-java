@@ -7,12 +7,8 @@ import java.lang.*;
 
 
 public class ShapeCollector {
-    private Shape shape;
-    private ArrayList<Shape> figureShapes = new ArrayList<>();
 
-    public ShapeCollector(Shape shape) {
-        this.shape = shape;
-    }
+    private ArrayList<Shape> figureShapes = new ArrayList<Shape>();
 
     public void addFigure(Shape shape) {
         figureShapes.add(shape);
@@ -22,14 +18,14 @@ public class ShapeCollector {
         figureShapes.remove(shape);
     }
 
-    public void getFigure(Shape shape) {
-        figureShapes.set();
+    public Shape getFigure(int index) {
         System.out.println("Element of the list is: " + figureShapes);
+        return figureShapes.get(index);
     }
 
-    public void showFigures(String shape) {
-       figureShapes.get();
-   }
+   // public void showFigures(String shape) {
+       //figureShapes.get();
+  // }
 
 }
     // pobierającą z kolekcji figurę z pozycji n listy.
