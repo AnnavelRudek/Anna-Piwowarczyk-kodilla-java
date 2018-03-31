@@ -42,9 +42,8 @@ import java.util.Objects;
                 '}';
     }
 
-
      @Override
      public void getField(int field) {
-
      }
+
  }

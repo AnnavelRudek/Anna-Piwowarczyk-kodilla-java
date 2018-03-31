@@ -14,8 +14,7 @@ public class ShapeCollector {
         figureShapes.add(shape);
     }
 
-    public void removeFigure(Shape shape) {
-        figureShapes.remove(shape);
+    public void removeFigure(Shape shape) {figureShapes.remove(shape);
     }
 
     public Shape getFigure(int index) {
@@ -35,10 +34,3 @@ public class ShapeCollector {
    }
 
 }
-    // pobierającą z kolekcji figurę z pozycji n listy.
-
-    // showFigures najlepiej jakby zwracała String lub Lis wtedy będzie ją najłatwiej przetestować
-
-
-
-

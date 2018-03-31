@@ -6,7 +6,7 @@ public class Circle implements Shape {
     private String shapeName;
     private Integer field;
 
-    public Circle(String shapeName, Integer field) {
+    public Circle(String shapeName, Integer getField) {
         this.shapeName = shapeName;
         this.field = field;
     }
@@ -45,7 +45,7 @@ public class Circle implements Shape {
 
     @Override
     public void getField(int field) {
-
     }
+
 }
 
