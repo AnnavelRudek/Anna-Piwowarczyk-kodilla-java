@@ -3,8 +3,8 @@ package com.kodilla.testing.forum;
 import java.util.Objects;
 
 public class ForumPost {
-    String postBody;
-    String author;
+    private String postBody;
+    private String author;
 
     public ForumPost(String postBody, String author) {
         this.postBody = postBody;
@@ -28,8 +28,6 @@ public class ForumPost {
         if (!postBody.equals(forumPost.postBody)) return false; // zawarte w materiale kodilli
         return author.equals(forumPost.author);
 
-        //return Objects.equals(postBody, forumPost.postBody) && // wygenerowane przez inteij
-               // Objects.equals(author, forumPost.author);
     }
 
     @Override
