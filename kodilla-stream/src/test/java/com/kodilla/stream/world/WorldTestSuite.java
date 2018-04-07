@@ -11,13 +11,13 @@ public class WorldTestSuite {
     public void testGetPeopleQuantity() {
 
         //Given
-        Country poland = new Country("poland", new BigDecimal(9));
-        Country thailand = new Country("thailand", new BigDecimal(25));
-        Country philipines = new Country("philipines", new BigDecimal(8));
-        Country spain = new Country("spain", new BigDecimal(5));
+        Country poland = new Country("Poland", new BigDecimal(9));
+        Country thailand = new Country("Thailand", new BigDecimal(25));
+        Country philipines = new Country("Philipines", new BigDecimal(8));
+        Country spain = new Country("Spain", new BigDecimal(5));
 
-        Continent asia = new Continent("asia", Arrays.asList(thailand, philipines));
-        Continent europe = new Continent("europe", Arrays.asList(poland, spain));
+        Continent asia = new Continent("Asia", Arrays.asList(thailand, philipines));
+        Continent europe = new Continent("Europe", Arrays.asList(poland, spain));
 
         World world = new World(Arrays.asList(asia, europe));
 
@@ -25,9 +25,7 @@ public class WorldTestSuite {
         BigDecimal peopleQuantity = world.getPeopleQuantity();
 
         //Then
-        Assert.assertEquals(new
-
-                BigDecimal("47"), peopleQuantity);
+        Assert.assertEquals(new BigDecimal("47"), peopleQuantity);
     }
 }
 
