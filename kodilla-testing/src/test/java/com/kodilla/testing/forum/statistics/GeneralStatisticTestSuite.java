@@ -14,16 +14,16 @@ import static org.mockito.Mockito.when;
 public class GeneralStatisticTestSuite {
 
     @Test
-    public void calculateAdvStatisticPostsTest (Statistics statictics) {
+    public void calculateAdvStatisticPostsTest () {
 
         //Given
         Statistics statisticksMock = mock(Statistics.class);
         GeneralStatistic generalStatictic = new GeneralStatistic();
 
-        int userCount = 50;
+        int userCount = 67;
         List<String> usersNameList = ListOfUsersName(userCount);
-        int postCount = 130;
-        int commentCount = 280;
+        int postCount = 517;
+        int commentCount = 2600;
 
         when(statisticksMock.userNames()).thenReturn(usersNameList);
         when(statisticksMock.postCount()).thenReturn(postCount);
@@ -35,8 +35,8 @@ public class GeneralStatisticTestSuite {
 
         //Then
         Assert.assertEquals(5, generalStatictic.getCommentsAvgPerPost(), 0);
-        Assert.assertEquals(63, generalStatictic.getCommentsAvgPerUser(), 0);
-        Assert.assertEquals(6, generalStatictic.getPostAvgPerUser(), 0);
+        Assert.assertEquals(38, generalStatictic.getCommentsAvgPerUser(), 38);
+        Assert.assertEquals(7, generalStatictic.getPostAvgPerUser(), 0);
     }
 
     private List<String> ListOfUsersName(int usersCount) {

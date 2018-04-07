@@ -36,7 +36,7 @@ public class StreamMain {
 
 
 
-        /*System.out.println("\n \n ^^^ Zadanie 7.3 - przyklad ^^^ \n");
+        /* System.out.println("\n \n ^^^ Zadanie 7.3 - przyklad ^^^ \n");
 
         People.getList().stream()
                 .forEach(System.out::println);
@@ -138,6 +138,6 @@ public class StreamMain {
         expressionExecutor.executeExpression(3,4, FunctionalCalculator::multiplyAByB);
         expressionExecutor.executeExpression(3, 4, FunctionalCalculator::addAToB);
         expressionExecutor.executeExpression(3, 4, FunctionalCalculator::subBFromA);
-        expressionExecutor.executeExpression(3,4, FunctionalCalculator::divideAByB);*/
+        expressionExecutor.executeExpression(3,4, FunctionalCalculator::divideAByB); */
     }
 }
