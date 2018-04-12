@@ -5,13 +5,13 @@ public class ExceptionHandling {
         SecondChellenge secondChellenge = new SecondChellenge();
 
         try{
-            secondChellenge.probablyIWillThrowException(1.1, 1.5);
+            secondChellenge.probablyIWillThrowException(2, 1.5);
 
         } catch (Exception e){
             System.out.println("Error: " + e);
 
         } finally {
-            System.out.println("Not working.");
+            System.out.println("End of process.");
         }
     }
 }
