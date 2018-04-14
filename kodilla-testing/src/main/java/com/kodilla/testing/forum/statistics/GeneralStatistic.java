@@ -5,13 +5,13 @@ import java.text.NumberFormat;
 
 public class GeneralStatistic {
 
-    private int userCount; //1. liczba uzytkownikow
-    private int postCount;//2. liczba postow
-    private int commentCount;//3. liczba komentarzy
+    private int userCount;
+    private int postCount;
+    private int commentCount;
 
-    private double postAvgPerUser;//4. średnia liczba postow na uzytkownika
-    private double commentsAvgPerUser;//5. srednia liczba komentarzy na osobe
-    private double commentsAvgPerPost;//6. srednia liczba komentarzy na post
+    private double postAvgPerUser;
+    private double commentsAvgPerUser;
+    private double commentsAvgPerPost;
 
     public void calculateAdvStatistics(Statistics statictics) {
         userCount = statictics.userNames().size();
@@ -29,6 +29,12 @@ public class GeneralStatistic {
         } else {
             commentsAvgPerPost = 0;
         }
+
+        if (userCount != 0 && commentCount != 0) {
+            commentsAvgPerUser = commentCount / userCount;
+        } else {
+            commentsAvgPerUser = 0;
+        }
     }
 
     public void showStatictic(){
@@ -40,7 +46,7 @@ public class GeneralStatistic {
                 + "Comment count = " + commentCount + "\n"
                 + "Post average per user = " + formatter.format(postAvgPerUser) + "\n"
                 + "Comments average per user  = " + formatter.format(commentsAvgPerUser) + "\n"
-                + "Comments avegare per post = " + formatter.format(commentsAvgPerPost));
+                + "Comments avegare per post = " + formatter.format(commentsAvgPerPost) + "\n");
     }
 
     public int getUserCount() {
