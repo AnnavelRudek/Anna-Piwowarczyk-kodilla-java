@@ -4,7 +4,7 @@ public class OrderRequestRetriever {
     public OrderRequest order(){
 
         User user = new User("Stefan", "Poziomka");
-        Product product = new Product("headphones");
+        Product product = new Product("Headphones");
 
         return new OrderRequest(user, product);
     }
