@@ -5,8 +5,7 @@ public class OrderProductMain {
         OrderRequestRetriever orderRequestRetriever = new OrderRequestRetriever();
         OrderRequest orderRequest = orderRequestRetriever.order();
 
-        OrderProcessor orderProcessor = new OrderProcessor()(
-                new EmailService(), new ProductOrderService(), new ProductOrderBasket());
+        OrderProcessor orderProcessor = new OrderProcessor(new EmailService(), new ProductOrderService(), new ProductOrderBasket());
         orderProcessor.process(orderRequest);
     }
 }

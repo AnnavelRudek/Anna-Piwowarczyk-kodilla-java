@@ -1,23 +1,19 @@
 package com.kodilla.good.patterns.challenges.flight;
 
-import java.util.Map;
 import java.util.Optional;
 
+
 public class FlightMain {
-    public static main(String[] args){
-
-        String departureAirport = " Warsaw - WAW";
-        Optional<String> transferAirport = Optional.ofNullable("Gdansk - GDA");
-        String arrivalAirport = "Kiev - IEV"
-
-        Flight flight = new Flight(departureAirport, transferAirport, arrivalAirport);
+    public static void main(String[] args){
         FlightFinder flightFinder = new FlightFinder();
 
-        Map<Integer, Flight> mapOfAvailableFlights = getMapOfAvailableFlights();
+        Airport departureAirport = new Airport("Warsaw - WAW");
+        Airport arrivalAirport = new Airport("Stockholm-Arlanda - ARN");
 
-        flightFinder.flightWithTransferAirport(flight, mapOfAvailableFlights);
-        flightFinder.flightFrom(departureAirport, mapOfAvailableFlights);
-        flightFinder.flightTo(arrivalAirport, mapOfAvailableFlights);
+
+        flightFinder.flightFrom(departureAirport);
+        flightFinder.flightThrough(departureAirport, arrivalAirport);
+        flightFinder.flightTo(arrivalAirport);
     }
 
 }
