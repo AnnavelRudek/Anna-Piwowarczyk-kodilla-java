@@ -1,10 +1,9 @@
 package com.kodilla.patterns.strategy.social;
 
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.sql.Struct;
+
 
 import static org.junit.Assert.assertEquals;
 
