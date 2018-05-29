@@ -5,6 +5,13 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+@NamedNativeQuery(
+        name = "Company.retrieveCompaniesByPhrase",
+        query = "SELECT * FROM COMPANIES" +
+                " WHERE COMPANY_NAME LIKE CONCAT('%',:PHRASE,'%')",
+        resultClass = Company.class
+        )
+
 @Entity
 @Table(name = "COMPANIES")
 public class Company {
