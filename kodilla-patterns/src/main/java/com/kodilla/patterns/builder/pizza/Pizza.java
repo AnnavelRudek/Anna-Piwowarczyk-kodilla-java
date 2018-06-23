@@ -51,4 +51,13 @@ public final class Pizza {
         return ingredients;
     }
 
+    @Override
+    public String toString(){
+        return "Pizza{" +
+                        "bottom= '" + bottom + '\'' +
+                        ", sauce='" + sauce + '\'' +
+                        ". ingredients=" + ingredients +
+                        '}';
+    }
+
 }
