@@ -36,7 +36,7 @@ public class ShapeFactoryTestSuite {
         Shape rectangle = factory.makeShape(ShapeFactory.RECTANGLE);
         //Then
         Assert.assertEquals(37.50, rectangle.getArea(), 0);
-        Assert.assertEquals("The long rectangle", rectangle.getName());
+        Assert.assertEquals("The long regtangle", rectangle.getName());
     }
 
 }
