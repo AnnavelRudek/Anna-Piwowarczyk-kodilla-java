@@ -10,7 +10,12 @@ import java.util.List;
         query = "SELECT * FROM COMPANIES" +
                 " WHERE COMPANY_NAME LIKE CONCAT('%',:PHRASE,'%')",
         resultClass = Company.class
-        )
+)
+
+@NamedQuery(
+        name = "Company.retrieveCompaniesWithNameLike",
+        query = "FROM COMPANY WHERE COMPANY_NAME LIKE :ARG"
+)
 
 @Entity
 @Table(name = "COMPANIES")
@@ -56,5 +61,4 @@ public class Company {
     private void setName(String name) {
         this.name = name;
     }
-
 }
