@@ -28,7 +28,7 @@ import java.util.List;
         private SearchFacade searchFacade;
 
         @Test
-        public void testSearchService() {
+        public void testSearchService() throws SearchProcessingException {
 
             //Given
             Employee johnSmith = new Employee("John", "Smith");
