@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface SalaryProcessor {
     BigDecimal calculateSalaries(List<Employee> employees);
+
 }

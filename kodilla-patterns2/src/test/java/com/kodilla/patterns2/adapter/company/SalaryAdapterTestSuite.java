@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 public class SalaryAdapterTestSuite {
     @Test
-    public void testTotalSalary(){
+    public void testTotalSalary() {
         //Given
         Workers workers = new Workers();
         SalaryAdapter salaryAdapter = new SalaryAdapter();
