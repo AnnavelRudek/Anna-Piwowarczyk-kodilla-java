@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 
 
 @Service
-public final class OrderFacade {
+public class OrderFacade {
     @Autowired
     private ShopService shopService;
     private static final org.slf4j.Logger LOGGER = LoggerFactory.getLogger(OrderFacade.class);
